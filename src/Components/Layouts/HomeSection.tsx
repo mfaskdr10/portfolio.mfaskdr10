@@ -15,14 +15,16 @@ const HomeSection = () => {
       <img src={fotoHome} alt="" className="w-[80%] lg:w-[30%] mx-auto mb-6" />
       <div className="lg:flex-1">
         <h1 className="text-[24px] font-medium mb-5">
-          I'm a FullStack Developer in Indonesian{" "}
+          Saya adalah FrontEnd Developer di Indonesia, ID
         </h1>
         <p className="mb-7">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          corrupti fugiat et non debitis laudantium officiis possimus odio at
-          voluptates.
+          Halo!  Saya Fadhil, seorang Web Developer yang berfokus
+          pada pengembangan website interaktif, responsif, dan berkinerja
+          tinggi. Saya percaya bahwa teknologi dapat menciptakan
+          pengalaman luar biasa, dan saya siap membantu mewujudkan ide-ide
+          kreatif Anda menjadi kenyataan. 🚀
         </p>
-        <Button />
+        <Button href="/about" title="Let's Talk"/>
       </div>
     </section>
   );

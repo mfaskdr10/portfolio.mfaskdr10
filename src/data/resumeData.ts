@@ -18,7 +18,7 @@ export const buttonResumes: ButtonResume[] = [
   {
     id: 2,
     state: "professional-skill",
-    text: "Professional Skills",
+    text: "Skills",
   },
 ];
 
@@ -62,12 +62,12 @@ export const dataEducations: DataEducation[] = [
       {
         id: 0,
         title: "Juara 3 Kediri Cyber Security (KCSC) 2024",
-        desc: "asasasas",
+        desc: "Perlombaan Cyber untuk SMA/SMK/Sederajat yang diselenggarakan oleh Dinas Komunikasi dan Informatika Pemerintah Kota Kediri pada tanggal 29-30 Oktober 2024",
       },
       {
         id: 1,
         title: "Certificate MTCNA",
-        desc: "asasasas",
+        desc: "Coming Soon",
       },
     ],
   },

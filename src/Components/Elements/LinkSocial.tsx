@@ -6,7 +6,7 @@ import { FaDribbble } from "react-icons/fa";
 const LinkSocial = () => {
   return (
     <>
-      <p className="text-[14px] font-normal mt-6 text-center">Social Account</p>
+      <p className="text-[14px] font-normal mt-6 text-center">Akun Sosial Media</p>
       <div className="flex mt-[13px] gap-4 justify-center">
         <FaFacebookF
           size={20}

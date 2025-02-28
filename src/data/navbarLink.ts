@@ -4,10 +4,10 @@ type NavLink = {
 };
 
 export const navLinks: NavLink[] = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Services", path: "/services" },
-  { name: "Projects", path: "/projects" },
+  { name: "Beranda", path: "/" },
+  { name: "Tentang Saya", path: "/about" },
+  { name: "Layanan", path: "/services" },
+  { name: "Projek", path: "/projects" },
   { name: "Blog", path: "/blog" },
-  { name: "Contact", path: "/contact" },
+  { name: "Kontak", path: "/contact" },
 ];

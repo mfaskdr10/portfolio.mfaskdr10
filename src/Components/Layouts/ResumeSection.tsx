@@ -13,7 +13,7 @@ const ResumeSection = () => {
         <HeaderSection
           title="My Resume"
           desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, accusantium?"
-          button={<Button />}
+          button={<Button href="/sjs" title="Download CV"/>}
         />
       </div>
 
