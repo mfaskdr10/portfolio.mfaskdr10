@@ -10,7 +10,7 @@ const HeaderSection = (props: HeaderSection) => {
   const { title, desc, button = null } = props;
   return (
     <div className={"text-left mb-8 relative"}>
-      <div className="flex justify-between h-auto items-center lg:flex-row flex-col">
+      <div className="flex justify-between h-auto  lg:flex-row flex-col">
         <div>
           <h1 className="text-3xl font-bold text-[#131313] mb-7 relative z-10">
             {title}

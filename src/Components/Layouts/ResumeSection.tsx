@@ -3,6 +3,7 @@ import Educations from "../Fragments/Educations";
 import { buttonResumes } from "../../data/resumeData";
 import { useState } from "react";
 import Button from "../Elements/Button";
+import Experience from "../Fragments/Experience";
 
 const ResumeSection = () => {
   const [activeTab, setActiveTab] = useState<string>("education");
@@ -13,7 +14,7 @@ const ResumeSection = () => {
         <HeaderSection
           title="My Resume"
           desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, accusantium?"
-          button={<Button href="/sjs" title="Download CV"/>}
+          button={<Button href="/sjs" title="Download CV" />}
         />
       </div>
 
@@ -36,11 +37,7 @@ const ResumeSection = () => {
 
         {/* MEnu */}
         {activeTab === "education" && <Educations />}
-        {activeTab === "experience" && (
-          <div className="bg-white p-10 flex-2 min-h-screen">
-            <h1>Experience</h1>
-          </div>
-        )}
+        {activeTab === "experience" && <Experience />}
         {activeTab === "professional-skill" && (
           <div className="bg-white p-10 flex-2 min-h-screen">
             <h1>Professional Skills</h1>

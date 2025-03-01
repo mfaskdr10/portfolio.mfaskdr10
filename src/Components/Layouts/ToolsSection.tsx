@@ -1,11 +1,11 @@
 import HeaderSection from "../Fragments/HeaderSection";
 import ServiceCard from "../Fragments/ServiceCard";
 
-const ServicesSection = () => {
+const ToolsSection = () => {
   return (
     <section className="py-20">
       <HeaderSection
-        title="My Skills"
+        title="Tech Stack"
         desc={
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, accusantium?"
         }
@@ -15,4 +15,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default ToolsSection;
