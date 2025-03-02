@@ -8,7 +8,7 @@ const AboutSection = () => {
         desc="Ini adalah perkenalan singkat"
       />
 
-      <div className="w-full bg-white p-10 rounded-lg shadow-xl">
+      <div className="w-full bg-white p-10 rounded-3xl shadow-2xl">
         <p className="mb-5 text-lg text-justify text-gray-700">
           Halo! Saya adalah seorang Web Developer yang bersemangat dalam
           menciptakan pengalaman digital yang menarik, responsif, dan

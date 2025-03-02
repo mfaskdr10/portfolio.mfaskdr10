@@ -11,7 +11,7 @@ const HeaderSection = (props: HeaderSection) => {
   return (
     <div className={"text-left mb-8 relative"}>
       <div className="flex justify-between h-auto  lg:flex-row flex-col">
-        <div>
+        <div >
           <h1 className="text-3xl font-bold text-[#131313] mb-7 relative z-10">
             {title}
           </h1>
@@ -21,9 +21,9 @@ const HeaderSection = (props: HeaderSection) => {
             width={150}
             className="absolute top-5"
           />
-          <p className="text-base text-gray-500 mb-7">{desc}</p>
+          <p className="text-base text-gray-500">{desc}</p>
         </div>
-        <div>{button}</div>
+        <div className="mt-5">{button}</div>
       </div>
       <hr className="my-7 border-gray-300" />
     </div>

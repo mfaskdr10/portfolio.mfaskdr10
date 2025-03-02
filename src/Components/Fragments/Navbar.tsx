@@ -9,19 +9,43 @@ import { IoMdClose } from "react-icons/io";
 import { NavLink } from "react-router";
 import { useNavbar } from "../../hooks/navbarHooks";
 import { navLinks } from "../../data/navbarLink";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const { isOpen, handleCloseNavMenu, handleOpenNav } = useNavbar();
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isScrolled]);
+
   return (
-    <div className="flex justify-between items-center relative bg-white py-3 px-6 rounded-full">
+    <nav
+      className={`fixed ${
+        isScrolled ? "right-0 left-0 top-0" : "lg:left-35 lg:right-35 left-5 right-5"
+      } flex justify-between items-center ${
+        isScrolled ? "bg-white" : "bg-white"
+      } py-3 px-6 rounded-2xl z-20 transition-all duration-500 ${
+        isScrolled ? "shadow-lg" : "bg-transparent"
+      }`}
+    >
       {/* Logo */}
-      <img src={Logo} alt="" width={60}/>
+      <img src={Logo} alt="" width={60} />
 
       {/* Navbar Menu */}
       <div
         className={`absolute top-20 left-0 bg-white w-full p-2 rounded-xl shadow-xl text-center ${
-          isOpen ? "block" : "hidden"
+          isOpen ? "block mt-5 shadow" : "hidden"
         } lg:block lg:static lg:items-center lg:shadow-none lg:bg-transparent`}
       >
         <ul className="lg:flex lg:justify-center lg:gap-10">
@@ -55,7 +79,7 @@ const Navbar = () => {
           )}
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -1,10 +1,10 @@
-import fotoHome from "../../assets/foto.png";
+import fotoHome from "../../assets/foto1.png";
 import Button from "../Elements/Button";
 import LinkSocial from "../Elements/LinkSocial";
 
 const HomeSection = () => {
   return (
-    <section className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3.5 py-30">
+    <section className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3.5 pt-50 ">
       <div className="mb-8 lg:mb-0 lg:flex-1">
         <h1 className="text-4xl font-bold mb-5 text-center lg:text-5xl lg:leading-15 ">
           Muhammad Fadhil Alvan Syah
