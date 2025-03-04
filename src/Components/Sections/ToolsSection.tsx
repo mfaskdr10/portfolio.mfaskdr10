@@ -1,9 +1,9 @@
-import HeaderSection from "../Fragments/HeaderSection";
-import ServiceCard from "../Fragments/ServiceCard";
+import HeaderSection from "../Layouts/HeaderSection";
+import ServiceCard from "../Fragments/ToolsCard";
 
 const ToolsSection = () => {
   return (
-    <section className="py-20">
+    <section className="pt-20">
       <HeaderSection
         title="Tech Stack"
         desc={

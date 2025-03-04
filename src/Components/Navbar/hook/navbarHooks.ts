@@ -4,7 +4,7 @@ export const useNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenNav = () => {
-    setIsOpen(isOpen ? false : true);
+    setIsOpen(!isOpen);
   };
 
   const handleCloseNavMenu = () => {
@@ -14,6 +14,6 @@ export const useNavbar = () => {
   return {
     isOpen,
     handleCloseNavMenu,
-    handleOpenNav
-  }
+    handleOpenNav,
+  };
 };

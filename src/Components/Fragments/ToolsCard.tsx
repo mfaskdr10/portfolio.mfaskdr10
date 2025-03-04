@@ -60,10 +60,13 @@ const dataTools: DataTool[] = [
 
 const ToolsCard = () => {
   return (
-    <div className="grid lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
       {dataTools.map((dataTool) => (
-        <div className="w-full p-10 bg-white rounded-xl shadow-lg flex items-center gap-4" key={dataTool.id}>
-          <div className="w-fit bg-emerald-400 rounded-xl p-4">
+        <div
+          className="w-full p-5 bg-white dark:bg-zinc-900 border border-gray-500 rounded-xl shadow-lg flex items-center gap-4"
+          key={dataTool.id}
+        >
+          <div className="w-fit bg-emerald-400 rounded p-4">
             {dataTool.icon}
           </div>
           <h1 className="text-lg font-medium">{dataTool.title}</h1>

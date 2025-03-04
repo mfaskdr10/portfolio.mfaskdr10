@@ -1,5 +1,3 @@
-import brush from "../../assets/brush.png";
-
 type HeaderSection = {
   title: string;
   desc: string;
@@ -11,21 +9,13 @@ const HeaderSection = (props: HeaderSection) => {
   return (
     <div className={"text-left mb-8 relative"}>
       <div className="flex justify-between h-auto  lg:flex-row flex-col">
-        <div >
-          <h1 className="text-3xl font-bold text-[#131313] mb-7 relative z-10">
-            {title}
-          </h1>
-          <img
-            src={brush}
-            alt="brush.png"
-            width={150}
-            className="absolute top-5"
-          />
-          <p className="text-base text-gray-500">{desc}</p>
+        <div>
+          <h1 className="text-3xl font-bold mb-2 relative z-10">{title}</h1>
+          <p className="text-base">{desc}</p>
         </div>
         <div className="mt-5">{button}</div>
       </div>
-      <hr className="my-7 border-gray-300" />
+      <hr className="my-7 border-gray-600" />
     </div>
   );
 };

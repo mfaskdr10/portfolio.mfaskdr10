@@ -1,16 +1,18 @@
-import HomeSection from "../Components/Layouts/HomeSection";
-import ResumeSection from "../Components/Layouts/ResumeSection";
-import AboutSection from "../Components/Layouts/AboutSection";
-import ToolsSection from "../Components/Layouts/ToolsSection";
+import AboutSection from "../Components/Sections/AboutSection";
+import HomeSection from "../Components/Sections/HomeSection";
+import ProjectSection from "../Components/Sections/ProjectSection";
+import ResumeSection from "../Components/Sections/ResumeSection";
+import ToolsSection from "../Components/Sections/ToolsSection";
 
 const LandingPage = () => {
   return (
-    <div>
+    <>
       <HomeSection />
       <AboutSection />
       <ToolsSection />
       <ResumeSection />
-    </div>
+      <ProjectSection />
+    </>
   );
 };
 

@@ -18,13 +18,10 @@ const HomeSection = () => {
           Saya adalah FrontEnd Developer di Indonesia, ID
         </h1>
         <p className="mb-7">
-          Halo!  Saya Fadhil, seorang Web Developer yang berfokus
-          pada pengembangan website interaktif, responsif, dan berkinerja
-          tinggi. Saya percaya bahwa teknologi dapat menciptakan
-          pengalaman luar biasa, dan saya siap membantu mewujudkan ide-ide
-          kreatif Anda menjadi kenyataan. 🚀
+          Halo! Saya Fadhil, seorang Web Developer yang berfokus pada
+          pengembangan website interaktif, responsif, dan berkinerja tinggi. 🚀
         </p>
-        <Button href="/about" title="Let's Talk"/>
+        <Button href="/about" title="Let's Talk" />
       </div>
     </section>
   );

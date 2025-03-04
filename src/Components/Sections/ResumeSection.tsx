@@ -1,6 +1,6 @@
-import HeaderSection from "../Fragments/HeaderSection";
+import HeaderSection from "../Layouts/HeaderSection";
 import Educations from "../Fragments/Educations";
-import { buttonResumes } from "../../data/resumeData";
+import { buttonResumes } from "./data/resumeData";
 import { useState } from "react";
 import Button from "../Elements/Button";
 import Experience from "../Fragments/Experience";
@@ -9,7 +9,7 @@ const ResumeSection = () => {
   const [activeTab, setActiveTab] = useState<string>("education");
 
   return (
-    <section className="py-20">
+    <section className="pt-20">
       <div>
         <HeaderSection
           title="My Resume"
@@ -23,10 +23,10 @@ const ResumeSection = () => {
           {buttonResumes.map((buttonResume) => (
             <p
               key={buttonResume.id}
-              className={`px-3 py-3 bg-emerald-50 border rounded-xl cursor-pointer lg:mb-5 ${
+              className={`px-3 py-3 dark:bg-zinc-900 bg-emerald-50 border border-gray-500 rounded-xl cursor-pointer lg:mb-5 ${
                 activeTab === buttonResume.state
                   ? "bg-emerald-500 text-emerald-50"
-                  : "text-black-200"
+                  : "text-black-200 bg-zinc-500"
               }`}
               onClick={() => setActiveTab(buttonResume.state)}
             >
