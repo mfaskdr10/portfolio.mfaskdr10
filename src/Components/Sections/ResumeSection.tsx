@@ -1,9 +1,10 @@
 import HeaderSection from "../Layouts/HeaderSection";
-import Educations from "../Fragments/Educations";
+import Educations from "./Fragments/Educations";
 import { buttonResumes } from "./data/resumeData";
 import { useState } from "react";
 import Button from "../Elements/Button";
-import Experience from "../Fragments/Experience";
+import Experience from "./Fragments/Experience";
+import Skills from "./Fragments/Skiils";
 
 const ResumeSection = () => {
   const [activeTab, setActiveTab] = useState<string>("education");
@@ -18,15 +19,15 @@ const ResumeSection = () => {
         />
       </div>
 
-      <div className="flex justify-between lg:flex-row flex-col lg:gap-7">
+      <div className="flex lg:flex-row flex-col ">
         <div className="flex-1 mb-10 lg:mb-0 flex justify-center gap-4 lg:block">
           {buttonResumes.map((buttonResume) => (
             <p
               key={buttonResume.id}
-              className={`px-3 py-3 dark:bg-zinc-900 bg-emerald-50 border border-gray-500 rounded-xl cursor-pointer lg:mb-5 ${
+              className={`rounded-xl cursor-pointer lg:mb-2 ${
                 activeTab === buttonResume.state
-                  ? "bg-emerald-500 text-emerald-50"
-                  : "text-black-200 bg-zinc-500"
+                  ? "text-emerald-50"
+                  : "text-gray-500"
               }`}
               onClick={() => setActiveTab(buttonResume.state)}
             >
@@ -38,11 +39,7 @@ const ResumeSection = () => {
         {/* MEnu */}
         {activeTab === "education" && <Educations />}
         {activeTab === "experience" && <Experience />}
-        {activeTab === "professional-skill" && (
-          <div className="bg-white p-10 flex-2 min-h-screen">
-            <h1>Professional Skills</h1>
-          </div>
-        )}
+        {activeTab === "professional-skill" && <Skills />}
       </div>
     </section>
   );

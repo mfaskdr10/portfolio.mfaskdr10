@@ -1,5 +1,5 @@
 import HeaderSection from "../Layouts/HeaderSection";
-import ServiceCard from "../Fragments/ToolsCard";
+import ToolsCard from "./Fragments/ToolsCard";
 
 const ToolsSection = () => {
   return (
@@ -10,7 +10,7 @@ const ToolsSection = () => {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, accusantium?"
         }
       />
-      <ServiceCard />
+      <ToolsCard />
     </section>
   );
 };

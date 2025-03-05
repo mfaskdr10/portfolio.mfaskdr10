@@ -9,7 +9,7 @@ const AboutSection = () => {
       />
 
       <div className="w-full dark:bg-zinc-900 bg-zinc-100 p-10 lg:p-12 rounded-2xl border border-gray-400">
-        <p className="mb-10 text-lg dark:text-gray-200 w-full lg:w-3xl">
+        <p className="mb-10 text-lg dark:text-gray-200 w-full lg:w-4xl">
           Halo! Saya adalah seorang Web Developer yang bersemangat dalam
           menciptakan pengalaman digital yang menarik, responsif, dan
           fungsional. Dengan keahlian dalam teknologi web modern, saya telah

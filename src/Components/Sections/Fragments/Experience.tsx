@@ -2,7 +2,7 @@ const Experience = () => {
   return (
     <div className="bg-white dark:bg-zinc-900 p-10 flex-2 rounded-2xl border border-gray-500">
       {/* Start Mapping */}
-      <div className="flex justify-between items-center mb-3 gap-1.5 lg:gap-25">
+      <div className="flex justify-between lg:items-center mb-3 gap-1.5 lg:gap-25 flex-col lg:flex-row items-start">
         <h1 className="text-lg font-bold mb-2 flex-2 flex flex-col">
           Internship Program (Frontend Developer) in ORDO APPS
           <span className="text-[14px] font-normal text-gray-500">
@@ -24,7 +24,7 @@ const Experience = () => {
         framework frontend terkini.
       </p>
 
-      <hr className="my-10" />
+      <hr className="my-10 border-gray-700" />
       {/* End Mapping */}
     </div>
   );

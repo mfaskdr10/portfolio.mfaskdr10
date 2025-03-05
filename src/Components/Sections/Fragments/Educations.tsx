@@ -1,4 +1,4 @@
-import { dataEducations } from "../Sections/data/resumeData";
+import { dataEducations } from "../data/resumeData";
 
 const Educations = () => {
   return (
@@ -30,7 +30,7 @@ const Educations = () => {
             </div>
           </div>
           {dataEducation.id === 2 ? null : (
-            <hr className="my-8 border-gray-500" />
+            <hr className="my-8 border-gray-700" />
           )}
         </div>
       ))}
