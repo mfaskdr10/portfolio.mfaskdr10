@@ -18,7 +18,7 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="p-2 rounded bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 cursor-pointer"
+      className="p-2 rounded bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 cursor-pointer border-2 border-sky-800"
     >
       {darkMode ? "☀️" : "🌙"}
     </button>

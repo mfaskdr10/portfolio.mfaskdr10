@@ -1,4 +1,4 @@
-import TitleSkill from "../elements/TitleSkill";
+import TitleSkill from "./TitleSkill";
 
 // Icon
 import { FaHtml5 } from "react-icons/fa";
@@ -11,7 +11,7 @@ import { FaVuejs } from "react-icons/fa6";
 
 const Skills: React.FC = () => {
   return (
-    <div className="bg-white dark:bg-zinc-900 p-10 flex-2 rounded-2xl border border-gray-500 min-h-screen">
+    <div className="bg-sky-100 dark:bg-gradient-to-b dark:from-sky-950 dark:to-zinc-900 p-10 flex-2 rounded-2xl border-2 border-sky-700">
       <TitleSkill
         title="Frontend"
         desc="Beberapa tools frontend yang saya kuasai dari vanilla sampai framework"

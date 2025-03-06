@@ -13,13 +13,13 @@ const Button = (props: ButtonRoute) => {
     <>
       <Link
         to={href}
-        className="bg-emerald-500 text-white inline-flex items-center gap-2 pl-6 pr-1.5 py-1.5 rounded-full text-[16px] font-medium"
+        className="bg-sky-700 text-white inline-flex items-center gap-2 pl-6 pr-1.5 py-1.5 rounded-full text-[16px] font-medium hover:bg-sky-600 transition-all duration-200"
       >
         {title}
         <FaLongArrowAltRight
           size={30}
-          color="white"
-          className="p-2 bg-emerald-800 rounded-full"
+          color="black"
+          className="p-2 bg-white rounded-full"
         />
       </Link>
     </>

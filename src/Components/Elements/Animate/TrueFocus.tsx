@@ -79,7 +79,7 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
 
   return (
     <div
-      className="relative lg:flex gap-4 justify-center items-center flex-wrap hidden"
+      className="relative lg:flex gap-4 justify-center items-center flex-wrap hidden dark:text-sky-50 text-sky-900"
       ref={containerRef}
     >
       {words.map((word, index) => {

@@ -1,5 +1,5 @@
-import ButtonSidebar from "../elements/ButtonSidebar";
-import DarkModeToggle from "../elements/DarkModeToggle";
+import ButtonSidebar from "./ButtonSidebar";
+import DarkModeToggle from "./DarkModeToggle";
 
 type NavButton = {
   isopen: boolean;

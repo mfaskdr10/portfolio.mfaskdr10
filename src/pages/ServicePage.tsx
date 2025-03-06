@@ -1,7 +1,7 @@
 import ComingSoon from "../Components/Elements/ComingSoon";
 
-const AboutPage = () => {
+const ServicePage: React.FC = () => {
   return <ComingSoon />;
 };
 
-export default AboutPage;
+export default ServicePage;

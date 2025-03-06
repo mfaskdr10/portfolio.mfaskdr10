@@ -1,10 +1,10 @@
-import fotoHome from "../../assets/foto1.png";
-import GradientText from "../Animate/GradientText";
-import TrueFocus from "../Animate/TrueFocus";
+import fotoHome from "/public/images/foto1.png";
+import GradientText from "../Elements/Animate/GradientText";
+import TrueFocus from "../Elements/Animate/TrueFocus";
 import Button from "../Elements/Button";
-import LinkSocial from "./elements/LinkSocial";
+import LinkSocial from "../Elements/LinkSocial";
 
-const HomeSection = () => {
+const HeroSection = () => {
   return (
     <section className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3.5 pt-50 ">
       <div className="mb-8 lg:mb-0 lg:flex-1">
@@ -19,8 +19,8 @@ const HomeSection = () => {
         <TrueFocus
           sentence="Muhammad Fadhil Alvan Syah"
           manualMode={true}
-          blurAmount={1}
-          borderColor="white"
+          blurAmount={0}
+          borderColor=""
           animationDuration={0.5}
           pauseBetweenAnimations={0.5}
           glowColor="blue"
@@ -28,7 +28,7 @@ const HomeSection = () => {
         <h1 className="text-4xl font-bold mb-5 text-center lg:text-5xl lg:leading-15 block lg:hidden">
           Muhammad Fadhil Alvan Syah
         </h1>
-        <hr className="w-[100px] lg:w-36 border-[1px] border-emerald-400 mx-auto mt-7" />
+        <hr className="w-[100px] lg:w-36 border-[1px] border-sky-700 mx-auto my-7" />
         <LinkSocial />
       </div>
       <img src={fotoHome} alt="" className="w-[80%] lg:w-[30%] mx-auto mb-6" />
@@ -46,4 +46,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
+export default HeroSection;

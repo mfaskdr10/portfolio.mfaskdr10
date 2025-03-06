@@ -1,13 +1,14 @@
 // Icon
-import Logo from "../../assets/ICON.png";
 
 // Elements
-import NavLinks from "./elements/NavLinks";
-import Nav from "./layouts/NavLayouts";
+
+import Nav from "./NavLayouts";
 
 // Hooks
-import { useNavbar } from "./hook/navbarHooks";
-import NavButtonLayout from "./layouts/NavButtons";
+import { useNavbar } from "../../hooks/navbarHooks";
+import NavLinks from "./NavLinks";
+import NavButtonLayout from "./NavButtons";
+
 
 const Navbar: React.FC = () => {
   // Hook untuk sidebar
@@ -16,7 +17,12 @@ const Navbar: React.FC = () => {
   return (
     <Nav>
       {/* Logo */}
-      <img src={Logo} alt="" width={60} className="rounded-full" />
+      <img
+        src={"/public/images/ICON.png"}
+        alt=""
+        width={60}
+        className="rounded-full"
+      />
 
       {/* Navbar Menu */}
       <NavLinks openNav={isOpen} closeNav={handleCloseNavMenu} />
