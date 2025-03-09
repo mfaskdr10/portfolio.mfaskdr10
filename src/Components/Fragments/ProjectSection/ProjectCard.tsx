@@ -1,7 +1,7 @@
 import project1 from "/public/images/Projects/project1.webp";
-import { FaGithub } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa";
-import { Link } from "react-router";
+// import { FaGithub } from "react-icons/fa";
+// import { FaFigma } from "react-icons/fa";
+// import { Link } from "react-router";
 
 const ProjectCard: React.FC = () => {
   return (
