@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <div className="bg-sky-100 dark:bg-gradient-to-b dark:from-sky-950 dark:to-zinc-900 p-10 flex-2 rounded-2xl border-2 border-sky-700">
+    <div className="dark:bg-gradient-to-b bg-dark-gradient p-10 flex-2 rounded-2xl border-2 border-zinc-700">
       {/* Start Mapping */}
       <div className="flex justify-between lg:items-center mb-3 gap-1.5 lg:gap-25 flex-col lg:flex-row items-start">
         <h1 className="text-lg font-bold mb-2 flex-2 flex flex-col dark:text-sky-50">

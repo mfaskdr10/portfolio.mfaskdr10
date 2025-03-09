@@ -18,5 +18,9 @@
   }
 }
 
+.bg-dark-gradient {
+  @apply dark:bg-gradient-to-b dark:from-sky-950 dark:to-zinc-900;
+}
+
 @plugin 'tailwind-scrollbar';
 @custom-variant dark (&:where(.dark, .dark *));

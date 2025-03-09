@@ -2,7 +2,7 @@ import { dataEducations } from "../../data/resumeData";
 
 const Educations = () => {
   return (
-    <div className="bg-sky-100 dark:bg-gradient-to-b dark:from-sky-950 dark:to-zinc-900 p-10 flex-2 rounded-2xl border-2 border-sky-700">
+    <div className="bg-dark-gradient p-5 lg:p-10 flex-2 rounded-2xl border-2 border-zinc-700">
       {dataEducations.map((dataEducation) => (
         <div key={dataEducation.id}>
           <div className="flex justify-between items-center lg:flex-row flex-col gap-y-2.5 lg:gap-y-0">

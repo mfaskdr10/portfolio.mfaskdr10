@@ -15,11 +15,11 @@ export const buttonResumes: ButtonResume[] = [
     state: "experience",
     text: "Experience",
   },
-  {
-    id: 2,
-    state: "professional-skill",
-    text: "Skills",
-  },
+  // {
+  //   id: 2,
+  //   state: "professional-skill",
+  //   text: "Skills",
+  // },
 ];
 
 type Experience = {
